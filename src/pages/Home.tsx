@@ -25,15 +25,15 @@ export default function Home() {
   return (
     <div className="space-y-8">
       {/* Hero Banner */}
-      <div className="relative rounded-3xl overflow-hidden bg-gradient-to-r from-emerald-600 to-teal-800 text-white p-8 md:p-12 shadow-md">
+      <div className="relative rounded-3xl overflow-hidden bg-gradient-to-r from-primary-600 to-primary-800 text-white p-8 md:p-12 shadow-md">
         <div className="max-w-2xl relative z-10 space-y-4">
-          <span className="bg-emerald-500/30 text-emerald-200 border border-emerald-400/30 font-bold px-3 py-1 rounded-full text-xs uppercase tracking-wider">
+          <span className="bg-primary-500/30 text-primary-200 border border-primary-400/30 font-bold px-3 py-1 rounded-full text-xs uppercase tracking-wider">
             Belanja Hemat & Cepat
           </span>
           <h2 className="text-3xl md:text-5xl font-black tracking-tight leading-tight">
             Penuhi Kebutuhan Harian Tanpa Ribet!
           </h2>
-          <p className="text-sm md:text-base text-emerald-100/90 font-medium">
+          <p className="text-sm md:text-base text-primary-100/90 font-medium">
             Warung Berkah menyediakan sembako, minuman, snack, dan berbagai perlengkapan rumah tangga dengan harga terbaik langsung ke tangan Anda.
           </p>
         </div>
@@ -63,7 +63,7 @@ export default function Home() {
               onClick={() => setSelectedCategory(cat.id)}
               className={`px-4 py-2.5 rounded-2xl text-xs font-bold whitespace-nowrap transition-all cursor-pointer ${
                 selectedCategory === cat.id
-                  ? 'bg-emerald-600 text-white shadow-sm'
+                  ? 'bg-primary-600 text-white shadow-sm'
                   : 'bg-slate-150/40 text-slate-600 hover:bg-slate-200 dark:bg-slate-800 dark:text-slate-350 dark:hover:bg-slate-700'
               }`}
             >
@@ -105,7 +105,7 @@ export default function Home() {
                   <div className="absolute top-6 right-6 flex flex-col gap-2 z-10 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-200">
                     <button
                       onClick={() => navigate(`/product/${product.id}`)}
-                      className="p-2 bg-white text-slate-600 rounded-xl hover:text-emerald-600 hover:bg-slate-50 shadow-md border border-slate-100"
+                      className="p-2 bg-white text-slate-600 rounded-xl hover:text-primary-600 hover:bg-slate-50 shadow-md border border-slate-100"
                       title="Lihat Detail"
                     >
                       <Eye className="w-4 h-4" />
@@ -148,7 +148,7 @@ export default function Home() {
                     <div>
                       {product.is_promo && product.promo_price ? (
                         <div className="flex flex-col">
-                          <span className="text-emerald-600 font-black text-base">Rp {product.promo_price.toLocaleString('id-ID')}</span>
+                          <span className="text-primary-600 font-black text-base">Rp {product.promo_price.toLocaleString('id-ID')}</span>
                           <span className="text-xs text-slate-400 line-through font-semibold">Rp {product.price.toLocaleString('id-ID')}</span>
                         </div>
                       ) : (
@@ -161,7 +161,7 @@ export default function Home() {
                       className={`p-2.5 rounded-xl shadow-sm transition-all text-white ${
                         isOutOfStock 
                           ? 'bg-slate-300 dark:bg-slate-800 cursor-not-allowed shadow-none' 
-                          : 'bg-emerald-600 hover:bg-emerald-700 active:scale-95 cursor-pointer'
+                          : 'bg-primary-600 hover:bg-primary-700 active:scale-95 cursor-pointer'
                       }`}
                       title={isOutOfStock ? 'Stok Habis' : 'Tambah ke Keranjang'}
                     >

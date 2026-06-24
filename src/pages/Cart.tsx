@@ -60,8 +60,8 @@ export default function Cart() {
           <p className="text-sm text-slate-500 mt-1">Barang yang akan kamu pesan</p>
         </div>
         <div className="card border-slate-100 text-center py-20">
-          <div className="w-20 h-20 bg-emerald-50 dark:bg-emerald-950/20 rounded-full flex items-center justify-center mx-auto mb-4">
-            <ShoppingBag className="w-10 h-10 text-emerald-300" />
+          <div className="w-20 h-20 bg-primary-50 dark:bg-primary-950/20 rounded-full flex items-center justify-center mx-auto mb-4">
+            <ShoppingBag className="w-10 h-10 text-primary-300" />
           </div>
           <h3 className="text-lg font-bold text-slate-900 dark:text-slate-50">Keranjang Kosong</h3>
           <p className="text-slate-400 mt-2 text-sm">
@@ -112,7 +112,7 @@ export default function Cart() {
                   <p className="font-bold text-slate-900 dark:text-slate-50 truncate">
                     {item.product.name}
                   </p>
-                  <p className="text-sm text-emerald-600 font-extrabold">
+                  <p className="text-sm text-primary-600 font-extrabold">
                     Rp {price.toLocaleString('id-ID')}
                   </p>
                   {item.product.is_promo && item.product.promo_price && (
@@ -128,7 +128,7 @@ export default function Cart() {
                 <div className="flex items-center gap-2 shrink-0">
                   <button
                     onClick={() => updateCartQuantity(item.product.id, item.quantity - 1)}
-                    className="w-8 h-8 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center hover:bg-emerald-100 dark:hover:bg-emerald-900/30 transition-colors cursor-pointer"
+                    className="w-8 h-8 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center hover:bg-primary-100 dark:hover:bg-primary-900/30 transition-colors cursor-pointer"
                   >
                     <Minus className="w-3 h-3" />
                   </button>
@@ -137,7 +137,7 @@ export default function Cart() {
                   </span>
                   <button
                     onClick={() => updateCartQuantity(item.product.id, item.quantity + 1)}
-                    className="w-8 h-8 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center hover:bg-emerald-100 dark:hover:bg-emerald-900/30 transition-colors cursor-pointer"
+                    className="w-8 h-8 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center hover:bg-primary-100 dark:hover:bg-primary-900/30 transition-colors cursor-pointer"
                   >
                     <Plus className="w-3 h-3" />
                   </button>
@@ -185,7 +185,7 @@ export default function Cart() {
             <div className="border-t border-slate-100 dark:border-slate-800 pt-4">
               <div className="flex justify-between">
                 <span className="font-extrabold text-slate-900 dark:text-slate-50">Total</span>
-                <span className="font-extrabold text-emerald-600 text-lg">
+                <span className="font-extrabold text-primary-600 text-lg">
                   Rp {subtotal.toLocaleString('id-ID')}
                 </span>
               </div>
@@ -216,10 +216,10 @@ export default function Cart() {
               </button>
             </div>
 
-            <div className="bg-emerald-50 dark:bg-emerald-950/20 rounded-2xl p-4">
+            <div className="bg-primary-50 dark:bg-primary-950/20 rounded-2xl p-4">
               <div className="flex justify-between items-center">
                 <span className="font-bold text-slate-700 dark:text-slate-300">Total Bayar</span>
-                <span className="font-extrabold text-emerald-600 text-xl">
+                <span className="font-extrabold text-primary-600 text-xl">
                   Rp {subtotal.toLocaleString('id-ID')}
                 </span>
               </div>

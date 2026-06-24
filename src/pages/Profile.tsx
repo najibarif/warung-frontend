@@ -44,7 +44,7 @@ export default function Profile() {
     <div className="max-w-lg mx-auto space-y-6">
       {/* Profile Header */}
       <div className="card border-slate-100 text-center">
-        <div className="w-24 h-24 rounded-full bg-gradient-to-br from-emerald-400 to-teal-600 flex items-center justify-center mx-auto mb-4 shadow-lg">
+        <div className="w-24 h-24 rounded-full bg-gradient-to-br from-primary-400 to-primary-600 flex items-center justify-center mx-auto mb-4 shadow-lg">
           <span className="text-4xl font-extrabold text-white">
             {user?.name?.charAt(0)?.toUpperCase() || '?'}
           </span>
@@ -53,7 +53,7 @@ export default function Profile() {
           {user?.name || 'Pengguna'}
         </h2>
         <p className="text-slate-400 font-medium mt-1">{user?.email || '-'}</p>
-        <div className="mt-4 inline-flex items-center gap-2 bg-emerald-50 dark:bg-emerald-950/20 text-emerald-600 font-bold text-sm px-4 py-1.5 rounded-full">
+        <div className="mt-4 inline-flex items-center gap-2 bg-primary-50 dark:bg-primary-950/20 text-primary-600 font-bold text-sm px-4 py-1.5 rounded-full">
           <User className="w-4 h-4" />
           Pelanggan
         </div>
@@ -62,7 +62,7 @@ export default function Profile() {
       {/* Stats Row */}
       <div className="grid grid-cols-2 gap-4">
         <div className="card border-slate-100 text-center py-5">
-          <p className="text-3xl font-extrabold text-emerald-600">{cart.length}</p>
+          <p className="text-3xl font-extrabold text-primary-600">{cart.length}</p>
           <p className="text-sm font-semibold text-slate-500 mt-1">Item di Keranjang</p>
         </div>
         <div className="card border-slate-100 text-center py-5">

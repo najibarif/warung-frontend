@@ -28,7 +28,7 @@ export default function Login() {
     <div className="min-h-[70vh] flex flex-col justify-center py-12 sm:px-6 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
         <div className="flex justify-center">
-          <div className="bg-emerald-600 p-4 rounded-2xl shadow-lg text-white">
+          <div className="bg-primary-600 p-4 rounded-2xl shadow-lg text-white">
             <Store className="w-12 h-12" />
           </div>
         </div>

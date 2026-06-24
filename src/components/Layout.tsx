@@ -47,7 +47,7 @@ export default function Layout() {
       <header className="sticky top-0 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-100 dark:border-slate-800/50 z-40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <Link to="/home" className="flex items-center gap-2.5 group">
-            <div className="bg-emerald-600 text-white p-2 rounded-xl group-hover:scale-105 transition-transform duration-200">
+            <div className="bg-primary-600 text-white p-2 rounded-xl group-hover:scale-105 transition-transform duration-200">
               <Store className="w-5 h-5" />
             </div>
             <div>
@@ -67,14 +67,14 @@ export default function Layout() {
                   className={cn(
                     "flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-bold transition-all relative",
                     isActive 
-                      ? "text-emerald-600 dark:text-emerald-400" 
+                      ? "text-primary-600 dark:text-primary-400" 
                       : "text-slate-500 hover:text-slate-900 dark:hover:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800/40"
                   )}
                 >
                   <item.icon className="w-4 h-4" />
                   <span>{item.name}</span>
                   {item.badge !== undefined && item.badge > 0 && (
-                    <span className="bg-emerald-600 text-white text-[10px] font-black w-4.5 h-4.5 flex items-center justify-center rounded-full ml-1 absolute -top-1.5 -right-1 ring-2 ring-white dark:ring-slate-900">
+                    <span className="bg-primary-600 text-white text-[10px] font-black w-4.5 h-4.5 flex items-center justify-center rounded-full ml-1 absolute -top-1.5 -right-1 ring-2 ring-white dark:ring-slate-900">
                       {item.badge}
                     </span>
                   )}
@@ -112,7 +112,7 @@ export default function Layout() {
             ) : (
               <Link 
                 to="/login"
-                className="flex items-center gap-1.5 px-4 py-2 bg-emerald-50 text-emerald-700 dark:bg-emerald-950/30 dark:text-emerald-400 rounded-xl text-xs font-bold hover:bg-emerald-100 transition-colors"
+                className="flex items-center gap-1.5 px-4 py-2 bg-primary-50 text-primary-700 dark:bg-primary-950/30 dark:text-primary-400 rounded-xl text-xs font-bold hover:bg-primary-100 transition-colors"
               >
                 <LogIn className="w-4 h-4" />
                 <span>Masuk</span>
@@ -137,13 +137,13 @@ export default function Layout() {
               to={item.href}
               className={cn(
                 "flex flex-col items-center gap-1 px-3 py-1 rounded-xl text-slate-400 relative",
-                isActive && "text-emerald-600 dark:text-emerald-400"
+                isActive && "text-primary-600 dark:text-primary-400"
               )}
             >
               <item.icon className="w-5 h-5" />
               <span className="text-[10px] font-bold">{item.name}</span>
               {item.badge !== undefined && item.badge > 0 && (
-                <span className="bg-emerald-600 text-white text-[9px] font-black w-4 h-4 flex items-center justify-center rounded-full absolute top-0.5 right-2 ring-1 ring-white dark:ring-slate-900">
+                <span className="bg-primary-600 text-white text-[9px] font-black w-4 h-4 flex items-center justify-center rounded-full absolute top-0.5 right-2 ring-1 ring-white dark:ring-slate-900">
                   {item.badge}
                 </span>
               )}

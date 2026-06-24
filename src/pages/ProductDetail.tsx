@@ -92,7 +92,7 @@ export default function ProductDetail() {
                 <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Harga</p>
                 {product.is_promo && product.promo_price ? (
                   <div className="flex items-baseline gap-2 mt-1">
-                    <span className="text-2xl font-black text-emerald-600">Rp {product.promo_price.toLocaleString('id-ID')}</span>
+                    <span className="text-2xl font-black text-primary-600">Rp {product.promo_price.toLocaleString('id-ID')}</span>
                     <span className="text-xs text-slate-400 line-through font-semibold">Rp {product.price.toLocaleString('id-ID')}</span>
                   </div>
                 ) : (
@@ -105,9 +105,9 @@ export default function ProductDetail() {
                 <span className={`px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1 ${
                   isOutOfStock 
                     ? 'bg-rose-50 text-rose-700 border border-rose-100' 
-                    : 'bg-emerald-50 text-emerald-700 border border-emerald-100'
+                    : 'bg-primary-50 text-primary-700 border border-primary-100'
                 }`}>
-                  {isOutOfStock ? <XCircle className="w-3.5 h-3.5 text-rose-600" /> : <CheckCircle className="w-3.5 h-3.5 text-emerald-600" />}
+                  {isOutOfStock ? <XCircle className="w-3.5 h-3.5 text-rose-600" /> : <CheckCircle className="w-3.5 h-3.5 text-primary-600" />}
                   <span>{isOutOfStock ? 'Habis' : `${product.stock} Tersedia`}</span>
                 </span>
               </div>
@@ -138,7 +138,7 @@ export default function ProductDetail() {
           {token && (
             <div className="card border-slate-100">
               <div className="flex items-center gap-2 mb-4">
-                <TrendingUp className="w-4 h-4 text-emerald-600" />
+                <TrendingUp className="w-4 h-4 text-primary-600" />
                 <h3 className="text-sm font-bold text-slate-900 dark:text-slate-100 uppercase tracking-wider">Riwayat Perubahan Harga</h3>
               </div>
 
@@ -156,7 +156,7 @@ export default function ProductDetail() {
                       </div>
                       <div className="font-bold">
                         <span className="text-slate-400 line-through mr-1.5">Rp {history.old_price.toLocaleString('id-ID')}</span>
-                        <span className="text-emerald-600">Rp {history.new_price.toLocaleString('id-ID')}</span>
+                        <span className="text-primary-600">Rp {history.new_price.toLocaleString('id-ID')}</span>
                       </div>
                     </div>
                   ))}

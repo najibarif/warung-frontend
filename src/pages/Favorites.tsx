@@ -55,12 +55,12 @@ export default function Favorites() {
                 <div className="flex-1 min-w-0">
                   <h4
                     onClick={() => navigate(`/product/${product.id}`)}
-                    className="font-bold text-slate-900 dark:text-slate-50 truncate cursor-pointer hover:text-emerald-600"
+                    className="font-bold text-slate-900 dark:text-slate-50 truncate cursor-pointer hover:text-primary-600"
                   >
                     {product.name}
                   </h4>
                   <div className="flex items-baseline gap-2 mt-1">
-                    <span className="text-emerald-600 font-extrabold text-base">
+                    <span className="text-primary-600 font-extrabold text-base">
                       Rp {price.toLocaleString('id-ID')}
                     </span>
                     {product.is_promo && product.promo_price && (
@@ -78,7 +78,7 @@ export default function Favorites() {
                   <button
                     onClick={() => !isOutOfStock && addToCart(product)}
                     disabled={isOutOfStock}
-                    className="p-2.5 bg-emerald-600 text-white rounded-xl hover:bg-emerald-700 active:scale-95 transition-all disabled:bg-slate-200 dark:disabled:bg-slate-800 cursor-pointer disabled:cursor-not-allowed"
+                    className="p-2.5 bg-primary-600 text-white rounded-xl hover:bg-primary-700 active:scale-95 transition-all disabled:bg-slate-200 dark:disabled:bg-slate-800 cursor-pointer disabled:cursor-not-allowed"
                     title="Tambah ke Keranjang"
                   >
                     <ShoppingBag className="w-4 h-4" />
