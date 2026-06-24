@@ -34,7 +34,7 @@ export default function Home() {
             Penuhi Kebutuhan Harian Tanpa Ribet!
           </h2>
           <p className="text-sm md:text-base text-primary-100/90 font-medium">
-            Warung Berkah menyediakan sembako, minuman, snack, dan berbagai perlengkapan rumah tangga dengan harga terbaik langsung ke tangan Anda.
+            Toko Nabil menyediakan sembako, minuman, snack, dan berbagai perlengkapan rumah tangga dengan harga terbaik langsung ke tangan Anda.
           </p>
         </div>
         <div className="absolute right-0 bottom-0 top-0 opacity-15 hidden lg:block select-none pointer-events-none text-9xl font-black p-8 flex items-center justify-center">

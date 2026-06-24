@@ -117,7 +117,7 @@ export default function ProductDetail() {
             <div className="space-y-2">
               <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider">Deskripsi Produk</h4>
               <p className="text-sm text-slate-500 dark:text-slate-450 leading-relaxed font-medium">
-                {product.description || 'Produk unggulan berkualitas dari Warung Berkah. Silakan tanyakan penjual untuk info lebih lanjut.'}
+                {product.description || 'Produk unggulan berkualitas dari Toko Nabil. Silakan tanyakan penjual untuk info lebih lanjut.'}
               </p>
             </div>
 

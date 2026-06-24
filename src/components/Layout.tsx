@@ -51,7 +51,7 @@ export default function Layout() {
               <Store className="w-5 h-5" />
             </div>
             <div>
-              <h1 className="font-extrabold text-base tracking-tight text-slate-900 dark:text-slate-50 leading-tight">Warung Berkah</h1>
+              <h1 className="font-extrabold text-base tracking-tight text-slate-900 dark:text-slate-50 leading-tight">Toko Nabil</h1>
               <p className="text-[10px] text-slate-400 font-semibold uppercase tracking-wider">Aplikasi Pelanggan</p>
             </div>
           </Link>

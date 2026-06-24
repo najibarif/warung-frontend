@@ -33,7 +33,7 @@ export default function Login() {
           </div>
         </div>
         <h2 className="mt-6 text-center text-3xl font-extrabold text-slate-900 dark:text-slate-50 tracking-tight">
-          Warung Berkah
+          Toko Nabil
         </h2>
         <p className="mt-2 text-center text-sm text-slate-500 dark:text-slate-400 font-medium">
           Masuk ke akun Pelanggan Anda
@@ -61,7 +61,7 @@ export default function Login() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className="input-field pl-11 text-sm"
-                  placeholder="user@warung.com"
+                  placeholder="user@tokonabil.com"
                 />
               </div>
             </div>
@@ -105,7 +105,7 @@ export default function Login() {
             </div>
           </form>
           <div className="mt-6 text-center text-xs text-slate-400">
-            Gunakan akun demo: <strong className="text-slate-500 dark:text-slate-350">user@warung.com</strong> / <strong className="text-slate-500 dark:text-slate-350">user123</strong>
+            Gunakan akun demo: <strong className="text-slate-500 dark:text-slate-350">user@tokonabil.com</strong> / <strong className="text-slate-500 dark:text-slate-350">user123</strong>
           </div>
         </div>
       </div>
